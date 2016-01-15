@@ -2777,7 +2777,7 @@ label + .help-block {
 .modal-success .modal-header,
 .modal-header-success {
   background-color: #d7eec6 !important;
-  background-image: url("images/icons/icon37-green.png");
+  background-image: url("../images/icons/icon37-green.png");
   border-color: #aedc8b;
   color: #305018;
   background-repeat: no-repeat;
@@ -2786,7 +2786,7 @@ label + .help-block {
     .alert-success,
     .modal-success .modal-header,
     .modal-header-success {
-      background-image: url("images/icons/icon37-green@2x.png");
+      background-image: url("../images/icons/icon37-green@2x.png");
       background-size: 37px 37px; } }
 
 .alert-info,

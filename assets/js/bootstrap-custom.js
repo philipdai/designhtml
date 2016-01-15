@@ -60,6 +60,8 @@ $(function () {
 	------------------------------------------------*/
 	function fixedNavOffset(){
 		var fixedNavHeight = $('.navbar-fixed-top').outerHeight();
+		fixedNavHeight = 112;
+
 		var fixedNavOffset = fixedNavHeight + 15;
 		$('body').css('padding-top', fixedNavOffset + "px");
 	}

@@ -1,0 +1,22 @@
+<form>
+
+    <!-- START:
+    ****************************
+    Fixed top
+    ****************************-->
+    <div ui-view="header"></div>
+
+    <!-- START:
+    ****************************
+    Page Container
+    ****************************-->
+
+    <div class="container page-container">
+        <div class="row row-eq-height">
+            <div ui-view="nav" class="col-xs-3 side-nav ng-scope"></div>
+            <div ui-view="body" class="container page-container ng-scope"></div>
+        </div><!-- ROW -->
+    </div><!-- CONTAINER -->
+
+
+</form>
