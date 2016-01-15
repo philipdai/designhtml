@@ -1,0 +1,173 @@
+p.components {
+  font-size: 12px;
+  font-weight: bold;
+  color: #bbb;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+
+/* REMOVE FF DOtted Line */
+a {
+   outline: 0!important;
+}
+
+/* SIDEBAR Nav */
+.side-nav .nav li.active ul {
+          border-bottom: 0px solid #cbcbcb!important; 
+      }
+
+.side-nav .nav li.active ul li a {
+    border-right: 1px solid #ffffff!important;
+            background-color: #ffffff!important;
+}
+
+.side-nav .nav li a {
+        display: block;
+        padding: 12px 5px 12px 15px;
+        text-decoration: none;
+        background-color: #e4e4e4;
+        border-bottom: 0px solid #d0d0d0!important;
+    }
+
+
+/* Select ONLY first one */
+ .side-nav #ui-nav ul.nav li:nth-child(-n+1) {
+        border-top: 0px solid #d0d0d0!important; 
+}
+/* Select all BUT first one */
+ .side-nav #ui-nav ul.nav li:nth-child(n+2), .side-nav #ui-nav ul.nav li ul li:nth-child(-n+1) {
+        border-top: 1px solid #d0d0d0!important;   
+}
+
+
+.side-nav .nav li.active {
+        margin-right: 0px!important;
+    }
+.side-nav .nav {
+     border-right: 1px solid #ffffff;
+    width: 294px !important;
+    z-index: 999;
+}
+
+/* Tab */
+.nav-tabs > li > a {
+    line-height: 1.4!important;
+}
+.nav-stacked > li + li {
+    margin-top: 0!important;
+}
+
+/* EQUAL HEIGHT COLUMNS */
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+}
+
+.context-first:before {
+  content: '';
+  padding-right: 10px; }
+
+
+.page-content {
+  padding: 15px 15px 15px 15px!important;
+}
+
+.bga-nav{
+	display:none;
+}
+.no-link{
+  /*color:#005691;*/
+}
+
+h1.page-header-tabs {
+  font-weight: normal !important;
+  margin: 5px 10px 0px 10px !important;
+  color: #02385A;
+  border-bottom: 0px solid #d7d7d7; }
+
+  .context{
+  	padding-left:10px;
+  }
+  .add_comment{
+  	font-size:16px;
+  	padding: 13px 30px 14px 20px !important;
+  }
+
+/* Tab changes */
+
+.nav-tabs {
+  margin-left: 0px!important; 
+}
+  /*
+A Bootstrap 3.1 affix sidebar template
+from http://bootply.com
+
+This CSS code should follow the 'bootstrap.css'
+in your HTML file.
+
+license: MIT
+author: bootply.com
+*/
+
+
+body {
+ padding-top:50px;
+}
+
+
+@media screen and (min-width: 768px) {
+
+}
+
+.navbar-bright {
+ background-color:#111155;
+ color:#fff;
+}
+
+.affix-top,.affix{
+ position: static;
+}
+
+@media (min-width: 979px) {
+  #sidebar.affix-top {
+    position: static;
+  	margin-top:0px;
+  }
+  
+  #sidebar.affix {
+    position: fixed;
+    top:112px;
+    width:293px;
+  }
+}
+
+#sidebar li.active {
+  border:0 #eee solid;
+  border-right-width:0px;
+}
+
+
+
+    .top_rule{
+    	border-top:1px solid #999999;
+    	margin-top:15px;
+    	padding-top:15px;
+    }
+
+
+ /*  HELPER  */
+ .m-l-5{margin-left:5px;}
+ .m-l-10{margin-left:10px;}
+ .m-l-15{margin-left:15px;}
+ .m-r-5{margin-right:5px;}
+ .m-r-10{margin-right:10px;}
+ .m-r-15{margin-right:15px;}
+ .m-t-5{margin-top:5px;}
+ .m-t-10{margin-top:10px;}
+ .m-t-15{margin-top:15px;}
+ .m-b-5{margin-bottom:5px;}
+ .m-b-10{margin-bottom:10px;}
+ .m-b-15{margin-bottom:15px;}
