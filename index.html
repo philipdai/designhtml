@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- saved from url=(0072)index.html -->
-<html lang="en">
+<html lang="en" ng-app="newAimsApp">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
@@ -11,12 +11,34 @@
     <title>Organizational Demographics</title>
     <!-- end: Meta -->
 
-    <!-- start: CSS -->
-    <link href="./assets/bootstrap.css" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/ui-framework-theme.css">
-    <link href="./assets/non-responsive.css" rel="stylesheet">
+    <!-- Philip's Adding Assets Begins -->
+    <script src="./assets/js/jquery/jquery.min.js"></script>
 
-    <link href="./assets/custom.css" rel="stylesheet">
+    <!-- AngularJS -->
+    <script src="./assets/js/angular/angular.min.js"></script>
+    <!-- AngularUI Router -->
+    <script src="./assets/js/angular-ui-router/angular-ui-router.min.js"></script>
+
+    <script src="./assets/js/angular-animate/angular-animate.min.js"></script>
+    <script src="./assets/js/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./assets/js/angular-bootstrap/angular-bootstrap.min.js"></script>
+
+    <script src="./app/app.js"></script>
+
+
+    <link href="./assets/js/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="./assets/css/bootstrap-slate.min.css" rel="stylesheet"/>
+    <link href="./assets/css/ng-animation.css" rel="stylesheet"/>
+    <link href="./assets/css/font-awesome.min.css" rel="stylesheet"/>
+    <!-- Philip's Adding Assets Ends -->
+
+
+    <!-- start: CSS -->
+    <link href="./assets/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/ui-framework-theme.css">
+    <link href="./assets/css/non-responsive.css" rel="stylesheet">
+
+    <link href="./assets/css/custom.css" rel="stylesheet">
 
     <!-- end: CSS -->
 
@@ -24,7 +46,7 @@
     <!--[if lt IE 9]>
 
     <![endif]-->
-    <style type="text/css"></style>
+
 </head>
 <body style="padding-top: 127px;">
 <form>
@@ -74,7 +96,8 @@
                             <div class="logo">
                                 <svg width="188" height="60">
                                     <image xlink:href="assets/images/nw.svg"
-                                           src="assets/images/nw-logo.png" width="188"
+                                           src="assets/images/nw-logo.png"
+                                           width="188"
                                            height="60"></image>
                                 </svg>
                             </div>
@@ -273,7 +296,8 @@
                                                             <div class="form-group">
                                                                 <label for="organizationattentionname">Attention</label>
                                                                 <input type="text" class="form-control"
-                                                                       id="organizationattentionname" placeholder="John Doe">
+                                                                       id="organizationattentionname"
+                                                                       placeholder="John Doe">
                                                             </div>
                                                         </div>
                                                         <div class="col-md-5">
@@ -514,7 +538,8 @@
                                                     <div class="row">
                                                         <div class="col-md-12">
                                                             <div class="form-group">
-                                                                <label for="businessaddress2a">Business Address 1*</label>
+                                                                <label for="businessaddress2a">Business Address
+                                                                    1*</label>
                                                                 <input type="text" class="form-control"
                                                                        id="businessaddress2a"
                                                                        placeholder="123 Main Street">
@@ -698,14 +723,16 @@
                                             <div class="top_rule"></div>
                                             <div class="pull-right m-l-10">
                                                 <button type="button" class="btn btn-primary" data-toggle="modal"
-                                                        data-target="#classifyMultiModal1" id="pageUnclassNextBtn1"><span
+                                                        data-target="#classifyMultiModal1"
+                                                        id="pageUnclassNextBtn1"><span
                                                         class="icon icon-save"></span> Save &amp; Continue <span
                                                         class="icon icon-chevron-right"></span>
                                                 </button>
                                             </div>
                                             <div class="pull-right">
                                                 <button type="button" class="btn btn-neutral" data-toggle="modal"
-                                                        data-target="#classifyMultiModal1" id="pageUnclassNextBtn2"><span
+                                                        data-target="#classifyMultiModal1"
+                                                        id="pageUnclassNextBtn2"><span
                                                         class="icon icon-save"></span> Save
                                                 </button>
                                             </div>
@@ -823,100 +850,18 @@ Javascripts
 ****************************-->
 
 
-<script src="./assets/jquery.js"></script>
-<script src="./assets/bootstrap.js"></script>
-<script src="./assets/moment.js"></script>
-<script src="./assets/bootstrap-datetimepicker.js"></script>
-<script src="./assets/jquery.tablesorter.js"></script>
-<script src="./assets/jquery-spin.js"></script>
-<script src="./assets/bootstrap-multiselect.js"></script>
-<script src="./assets/typeahead.bundle.js"></script>
-<script src="./assets/jquery-mask.js"></script>
-<script src="./assets/bootstrap-custom.js"></script>
+<script src="./assets/js/jquery.js"></script>
+<script src="./assets/js/bootstrap.js"></script>
+<script src="./assets/js/moment.js"></script>
+<script src="./assets/js/bootstrap-datetimepicker.js"></script>
+<script src="./assets/js/jquery.tablesorter.js"></script>
+<script src="./assets/js/jquery-spin.js"></script>
+<script src="./assets/js/bootstrap-multiselect.js"></script>
+<script src="./assets/js/typeahead.bundle.js"></script>
+<script src="./assets/js/jquery-mask.js"></script>
+<script src="./assets/js/bootstrap-custom.js"></script>
+<script src="./assets/js/custom.js"></script>
 
-
-<script type="text/javascript">
-    $(function () {
-        $('.side-nav .nav > li > a').on('click', function () {
-            //check if current li is active
-            //if it is, remove active and collapse next
-            //if its not, add active and expand next
-            //if its a link inside an expanded next, add active class to parent parent
-            if ($(this).parent().hasClass('active')) {
-                $('.side-nav .nav li').removeClass('active');
-                $(this).parent().removeClass('active');
-                $(this).next().addClass('hidden');
-                $(this).find('span').removeClass('icon-chevron-down').addClass('icon-chevron-right');
-            } else {
-                $('.side-nav .nav li').removeClass('active');
-                $(this).parent().addClass('active');
-                $(this).next().removeClass('hidden');
-                $(this).find('span').removeClass('icon-chevron-right').addClass('icon-chevron-down');
-            }
-
-        });
-
-        $('.side-nav .nav > li > ul > li > a').on('click', function () {
-            if ($(this).parent().parent().parent().hasClass('active')) {
-                $(this).parent().siblings().removeClass('active');
-                $(this).parent().addClass('active');
-            } else {
-                $('.side-nav .nav > li').removeClass('active');
-                $(this).parent().siblings().removeClass('active');
-                $(this).parent().parent().parent().addClass('active');
-                $(this).parent().addClass('active');
-            }
-
-        })
-    })
-
-</script>
-<script>
-
-    $('.mask-date').mask("00/00/0000", {placeholder: "__/__/____"});
-    $('.mask-phone').mask("(000) 000-0000", {placeholder: "(___) ___-___"});
-    $('.mask-phone-extension').mask("(000) 000-0000  ext: 000000", {placeholder: "(___) ___-___  ext: ______"});
-    $('.mask-zip').mask("00000-0000", {placeholder: "_____-____"});
-</script>
-<script>
-    // Affix left side bar navigation
-    $(document).ready(function () {/* activate sidebar */
-        $('#sidebar').affix({
-            offset: {
-                top: 10
-            }
-        });
-
-        /* activate scrollspy menu */
-        var $body = $(document.body);
-        var navHeight = $('.navbar').outerHeight(true) + 10;
-
-        $body.scrollspy({
-            target: '#leftCol',
-            offset: navHeight
-        });
-
-    });
-</script>
-<script>
-    /* This was added as a prototyping way of show/hide content via a SELECT MENU OPTION VALUE */
-    //add collapse to all tags hiden and showed by select mystuff
-    $('#tab-organization_demographics').on('change', '.organization_type', function () {
-        var $this = $(this);
-        var $selectedText = $this.find(':selected').text();
-        var $col = $this.parents('div.organization_demographics').children('div.organization_type-bga');
-
-        if ($selectedText === 'BGA') {// THIS SCRIPT LOOKS AT THE OP
-            $col.collapse('show');
-            $(".bga-nav").css("display", "block");
-
-        } else {
-            $col.collapse('hide');
-            $(".bga-nav").css("display", "none");
-            ClearFormFields($col);
-        }
-    });
-</script>
 
 </body>
 </html>

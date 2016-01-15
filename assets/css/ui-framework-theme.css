@@ -507,7 +507,7 @@ legend + .radio-inline {
  */
 .btn-primary .icon,
 .btn-secondary .icon {
-  background-image: url(images/icons/glyphicons-halflings-white.png);
+  background-image: url(../images/icons/glyphicons-halflings-white.png);
   display: inline-block;
   width: 14px;
   height: 14px;
@@ -521,11 +521,11 @@ legend + .radio-inline {
   @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
     .btn-primary .icon,
     .btn-secondary .icon {
-      background-image: url(images/icons/glyphicons-halflings-white@2x.png);
+      background-image: url(../images/icons/glyphicons-halflings-white@2x.png);
       background-size: 475px 259px; } }
 
 .icon {
-  background-image: url(images/icons/glyphicons-halflings.png);
+  background-image: url(../images/icons/glyphicons-halflings.png);
   display: inline-block;
   width: 14px;
   height: 14px;
@@ -538,7 +538,7 @@ legend + .radio-inline {
   top: -1px; }
   @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
     .icon {
-      background-image: url(images/icons/glyphicons-halflings@2x.png);
+      background-image: url(../images/icons/glyphicons-halflings@2x.png);
       background-size: 475px 259px; } }
   .icon.icon-glass {
     background-position: -0px -0px; }
@@ -3241,10 +3241,10 @@ a.logo {
       border-color: #002945 !important;
       background-color: #002945 !important; }
   .navbar-inverse .icon {
-    background-image: url(images/icons/glyphicons-halflings-white.png) !important; }
+    background-image: url(../images/icons/glyphicons-halflings-white.png) !important; }
     @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
       .navbar-inverse .icon {
-        background-image: url(images/icons/glyphicons-halflings-white@2x.png) !important; } }
+        background-image: url(../images/icons/glyphicons-halflings-white@2x.png) !important; } }
   .navbar-inverse .navbar-collapse,
   .navbar-inverse .navbar-form {
     border-color: #00416d !important; }
@@ -3978,7 +3978,7 @@ tr.has-warning .popover .arrow:after {
   background-color: #f1f1f1 !important; }
 
 span.footable-toggle:before {
-  background-image: url(images/icons/glyphicons-halflings.png);
+  background-image: url(../images/icons/glyphicons-halflings.png);
   display: inline-block;
   width: 14px;
   height: 14px;
@@ -3992,11 +3992,11 @@ span.footable-toggle:before {
   background-position: -408px -98px; }
   @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
     span.footable-toggle:before {
-      background-image: url(images/icons/glyphicons-halflings@2x.png);
+      background-image: url(../images/icons/glyphicons-halflings@2x.png);
       background-size: 475px 259px; } }
 
 .footable-detail-show span.footable-toggle:before {
-  background-image: url(images/icons/glyphicons-halflings.png);
+  background-image: url(../images/icons/glyphicons-halflings.png);
   display: inline-block;
   width: 14px;
   height: 14px;
@@ -4010,11 +4010,11 @@ span.footable-toggle:before {
   background-position: -434px -98px; }
   @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
     .footable-detail-show span.footable-toggle:before {
-      background-image: url(images/icons/glyphicons-halflings@2x.png);
+      background-image: url(../images/icons/glyphicons-halflings@2x.png);
       background-size: 475px 259px; } }
 
 .footable > thead > tr > th > span.footable-sort-indicator {
-  background-image: url(images/icons/glyphicons-halflings.png);
+  background-image: url(../images/icons/glyphicons-halflings.png);
   display: inline-block;
   width: 14px;
   height: 14px;
@@ -4029,10 +4029,10 @@ span.footable-toggle:before {
   background-position: -338px -241px; }
   @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
     .footable > thead > tr > th > span.footable-sort-indicator {
-      background-image: url(images/icons/glyphicons-halflings@2x.png);
+      background-image: url(../images/icons/glyphicons-halflings@2x.png);
       background-size: 475px 259px; } }
 .footable > thead > tr > th.footable-sorted > span.footable-sort-indicator {
-  background-image: url(images/icons/glyphicons-halflings.png);
+  background-image: url(../images/icons/glyphicons-halflings.png);
   display: inline-block;
   width: 14px;
   height: 14px;
@@ -4047,10 +4047,10 @@ span.footable-toggle:before {
   background-position: -3px -241px; }
   @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
     .footable > thead > tr > th.footable-sorted > span.footable-sort-indicator {
-      background-image: url(images/icons/glyphicons-halflings@2x.png);
+      background-image: url(../images/icons/glyphicons-halflings@2x.png);
       background-size: 475px 259px; } }
 .footable > thead > tr > th.footable-sorted-desc > span.footable-sort-indicator {
-  background-image: url(images/icons/glyphicons-halflings.png);
+  background-image: url(../images/icons/glyphicons-halflings.png);
   display: inline-block;
   width: 14px;
   height: 14px;
@@ -4065,7 +4065,7 @@ span.footable-toggle:before {
   background-position: -27px -241px; }
   @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
     .footable > thead > tr > th.footable-sorted-desc > span.footable-sort-indicator {
-      background-image: url(images/icons/glyphicons-halflings@2x.png);
+      background-image: url(../images/icons/glyphicons-halflings@2x.png);
       background-size: 475px 259px; } }
 
 /* 

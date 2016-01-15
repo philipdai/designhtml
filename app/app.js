@@ -1,0 +1,1 @@
+var newAimsApp = angular.module('newAimsApp', ['ui.router']);
